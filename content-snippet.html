@@ -1,0 +1,11 @@
+<div>
+  <form onSubmit="(function(){ return false; })();">
+      <div><label for="id" style="margin-bottom: 10px">Amount</label></div>
+      <div><input id="amount" type="number" style="margin-bottom: 10px"></div>
+      <div id="securepay-ui-container"></div>
+      <button type="button" onClick="(function(){ mySecurePayUI.tokenise();})();">Submit</button>
+      <button type="button" onClick="(function(){ mySecurePayUI.reset();})();">Reset</button>
+      <p id="result-message"></p>
+  </form>
+<script id="securepay-ui-js" src="https://payments-stest.npe.auspost.zone/v3/ui/client/securepay-ui.min.js"></script>
+</div>
